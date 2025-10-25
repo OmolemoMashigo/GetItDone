@@ -14,13 +14,8 @@ struct AddItemView: View {
     
     @State private var taskTitle = ""
     @State private var taskDescription = ""
+    @State private var showingAlert = false
     
-    var disbleSave: Bool{
-        if taskTitle.count < 3{
-            return true
-        }
-        return false
-    }
     
     var body: some View {
     
@@ -38,13 +33,28 @@ struct AddItemView: View {
                 Button("Add"){
                     let todoItem = TodoItem(title: taskTitle, details: taskDescription, isCompleted: false)
                     modelContext.insert(todoItem)
-                    dismiss()
+                    
+                    if isValidInput(){
+                        dismiss()
+                    }
                 }
-                .disabled(disbleSave)
             }
             .navigationTitle("Add task")
+            .alert(isPresented: $showingAlert) {
+                Alert(title: Text("Your task must be at least 3 characters long"))
+                
+            }
         }
+        
     }
+    
+            func isValidInput() -> Bool{
+                if taskTitle.count < 3{
+                    showingAlert = true
+                    return false
+                }
+                return true
+            }
     
 }
 

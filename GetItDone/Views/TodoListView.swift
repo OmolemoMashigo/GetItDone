@@ -46,6 +46,8 @@ struct TodoListView: View {
                 }
             
             }
+            //.animation(.linear.delay(Double(num)/20), value: amountDragged)
+            //.animation(.bouncy, value: amountDragged)
             .animation(.easeInOut, value: todos)
             .animation(.easeInOut, value: doneItems)
             .navigationTitle("Get It Done")
