@@ -27,6 +27,9 @@ struct TodoListView: View {
                 Section("To-do"){
                     ForEach(todos){ item in
                         TodoListItem(todoItem: item)
+                            .onTapGesture {
+                                updateItems(todoItem: item)
+                            }
                     }
                     .onDelete(perform: deleteItem)
                 }
@@ -36,6 +39,9 @@ struct TodoListView: View {
                 Section("Done"){
                     ForEach(doneItems){ item in
                         TodoListItem(todoItem: item)
+                            .onTapGesture {
+                                updateItems(todoItem: item)
+                            }
                     }
                     .onDelete(perform: deleteItem)
                 }
@@ -57,6 +63,12 @@ struct TodoListView: View {
                 AddItemView()
             }
         }
+        
+    }
+    
+    func updateItems(todoItem: TodoItem){
+        todoItem.isCompleted.toggle()
+        try? modelContext.save()
         
     }
     
