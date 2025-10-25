@@ -10,20 +10,23 @@ import SwiftData
 
 struct TodoListView: View {
     
-    @State var listItems = ["Eat", "Clean", "Work", "Gym"]
+    
     @Environment(\.modelContext) var modelContext
     
-//    @Query(sort: [
-//        SortDescriptor(\TodoItem.title),
-//        SortDescriptor(\TodoItem.details)
-//    ]) var todos: [TodoItem]
+    @Query(filter: #Predicate<TodoItem> { !$0.isCompleted })
+    private var todos: [TodoItem]
+
+    @Query(filter: #Predicate<TodoItem> { $0.isCompleted })
+    private var doneItems: [TodoItem]
+    
+    @State private var showingAddScreen = false
     
     var body: some View {
         NavigationStack{
             List{
                 Section("To-do"){
-                    ForEach(listItems, id: \.self){ item in
-                        Text(item)
+                    ForEach(todos){ item in
+                        TodoListItem(todoItem: item)
                     }
                     .onDelete(perform: deleteItem)
                 }
@@ -31,8 +34,8 @@ struct TodoListView: View {
                 
                 
                 Section("Done"){
-                    ForEach(listItems, id: \.self){ item in
-                        Text(item)
+                    ForEach(doneItems){ item in
+                        TodoListItem(todoItem: item)
                     }
                     .onDelete(perform: deleteItem)
                 }
@@ -46,19 +49,19 @@ struct TodoListView: View {
                 
                 ToolbarItem(placement: .topBarTrailing){
                     Button("Add", action: {
-                        let newItem = TodoItem(title: "eat", details: "make dinner", isCompleted: false)
-                        modelContext.insert(newItem)
-                        deleteAllTodos()
-                        printItems()
+                        showingAddScreen.toggle()
                     })
                 }
+            }
+            .sheet(isPresented: $showingAddScreen){
+                AddItemView()
             }
         }
         
     }
     
     func deleteItem(indexSet: IndexSet){
-        listItems.remove(atOffsets: indexSet)
+        //listItems.remove(atOffsets: indexSet)
     }
     
     func printItems(){
