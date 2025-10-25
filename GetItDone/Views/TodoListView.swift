@@ -10,7 +10,6 @@ import SwiftData
 
 struct TodoListView: View {
     
-    
     @Environment(\.modelContext) var modelContext
     
     @Query(filter: #Predicate<TodoItem> { !$0.isCompleted })
@@ -31,7 +30,7 @@ struct TodoListView: View {
                                 updateItems(todoItem: item)
                             }
                     }
-                    .onDelete(perform: deleteItem)
+                    .onDelete(perform: deleteTodoItem)
                 }
                 
                 
@@ -43,10 +42,12 @@ struct TodoListView: View {
                                 updateItems(todoItem: item)
                             }
                     }
-                    .onDelete(perform: deleteItem)
+                    .onDelete(perform: deleteDoneItem)
                 }
-                
+            
             }
+            .animation(.easeInOut, value: todos)
+            .animation(.easeInOut, value: doneItems)
             .navigationTitle("Get It Done")
             .toolbar{
                 ToolbarItem(placement: .topBarLeading){
@@ -72,9 +73,22 @@ struct TodoListView: View {
         
     }
     
-    func deleteItem(indexSet: IndexSet){
-        //listItems.remove(atOffsets: indexSet)
+    func deleteTodoItem(at offsets: IndexSet){
+        for offset in offsets{
+            let todo = todos[offset]
+            modelContext.delete(todo)
+        }
+        print("delete")
     }
+    
+    func deleteDoneItem(at offsets: IndexSet){
+        for offset in offsets{
+            let done = doneItems[offset]
+            modelContext.delete(done)
+        }
+        print("delete")
+    }
+    
     
     func printItems(){
         let fetchDescriptor = FetchDescriptor<TodoItem>()
