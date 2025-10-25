@@ -6,16 +6,18 @@
 //
 
 import SwiftData
+import Foundation
 
 @Model
-class TodoItem{
+class TodoItem: Identifiable{
+    var id = UUID()
     var title: String
     var details: String
     var isCompleted: Bool
     
-    init(title: String, details: String, isCompleted: Bool = false) {
+    init(title: String, details: String, isCompleted: Bool) {
         self.title = title
         self.details = details
-        self.isCompleted = false
+        self.isCompleted = isCompleted
     }
 }
