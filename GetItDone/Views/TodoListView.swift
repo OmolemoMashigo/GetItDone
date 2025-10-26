@@ -22,48 +22,54 @@ struct TodoListView: View {
     
     var body: some View {
         NavigationStack{
-            List{
-                Section("To-do"){
-                    ForEach(todos){ item in
-                        TodoListItem(todoItem: item)
-                            .onTapGesture {
-                                updateItems(todoItem: item)
-                            }
+            VStack{
+                
+                WeatherView()
+                
+                List{
+                    
+                    Section("To-do"){
+                        ForEach(todos){ item in
+                            TodoListItem(todoItem: item)
+                                .onTapGesture {
+                                    updateItems(todoItem: item)
+                                }
+                        }
+                        .onDelete(perform: deleteTodoItem)
                     }
-                    .onDelete(perform: deleteTodoItem)
-                }
-                
-                
-                
-                Section("Done"){
-                    ForEach(doneItems){ item in
-                        TodoListItem(todoItem: item)
-                            .onTapGesture {
-                                updateItems(todoItem: item)
-                            }
+                    
+                    
+                    
+                    Section("Done"){
+                        ForEach(doneItems){ item in
+                            TodoListItem(todoItem: item)
+                                .onTapGesture {
+                                    updateItems(todoItem: item)
+                                }
+                        }
+                        .onDelete(perform: deleteDoneItem)
                     }
-                    .onDelete(perform: deleteDoneItem)
+                    
                 }
-            
-            }
-            //.animation(.linear.delay(Double(num)/20), value: amountDragged)
-            //.animation(.bouncy, value: amountDragged)
-            .animation(.easeInOut, value: todos)
-            .animation(.easeInOut, value: doneItems)
-            .navigationTitle("Get It Done")
-            .toolbar{
-                ToolbarItem(placement: .topBarLeading){
-                    EditButton()
+                //.animation(.linear.delay(Double(num)/20), value: amountDragged)
+                //.animation(.bouncy, value: amountDragged)
+                .animation(.easeInOut, value: todos)
+                .animation(.easeInOut, value: doneItems)
+                .navigationTitle("Get It Done")
+                .toolbar{
+                    ToolbarItem(placement: .topBarLeading){
+                        EditButton()
+                    }
+                    
+                    ToolbarItem(placement: .topBarTrailing){
+                        Button("Add", action: {
+                            showingAddScreen.toggle()
+                        })
+                    }
                 }
-                
-                ToolbarItem(placement: .topBarTrailing){
-                    Button("Add", action: {
-                        showingAddScreen.toggle()
-                    })
+                .sheet(isPresented: $showingAddScreen){
+                    AddItemView()
                 }
-            }
-            .sheet(isPresented: $showingAddScreen){
-                AddItemView()
             }
         }
         

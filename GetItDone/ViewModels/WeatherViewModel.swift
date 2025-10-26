@@ -14,6 +14,7 @@ class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     @Published var sunrise: String?
     @Published var sunset: String?
     @Published var cityName: String = ""
+    @Published var condition = ""
     
     @Published var isLoading = false
     @Published var errorMessage: String?
@@ -89,6 +90,7 @@ class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                 case .success(let weatherData):
                     self.temperature = weatherData.current.tempC
                     self.cityName = weatherData.location.name
+                    self.condition = weatherData.current.condition.text
                     print("city: \(self.cityName)")
                 case .failure(let error):
                     self.errorMessage = "Failed to load weather: \(error.localizedDescription)"
