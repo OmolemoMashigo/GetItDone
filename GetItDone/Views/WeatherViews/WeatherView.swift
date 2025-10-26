@@ -17,10 +17,11 @@ struct WeatherView: View {
         ZStack(alignment: .leading) {
             // Background gradient with soft material effect
             LinearGradient(
-                gradient: Gradient(colors: [Color.blue.opacity(0.3), Color.white.opacity(0.1)]),
+                gradient: Gradient(colors: [Color.blue.opacity(0.4), Color.white.opacity(0.3)]),
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
+            .background(Color.black.opacity(0.25))
             .background(.ultraThinMaterial)
             .clipShape(RoundedRectangle(cornerRadius: 20))
             .shadow(color: .black.opacity(0.15), radius: 10, x: 0, y: 4)
@@ -66,8 +67,10 @@ struct WeatherView: View {
                     }
                 }
                 .padding()
+                
             }
             .padding()
+            
         }
         .frame(height: 100)
         .background(Color.clear)

@@ -19,14 +19,23 @@ struct TodoListView: View {
     private var doneItems: [TodoItem]
     
     @State private var showingAddScreen = false
+    @State private var showWeatherDetails = false
     
     var body: some View {
         NavigationStack{
             VStack{
                 
-                NavigationLink(destination: WeatherDetailsView()) {
-                    WeatherView()
-                }
+//                NavigationLink(destination: WeatherDetailsView()) {
+//                    WeatherView()
+//                }
+                
+                WeatherView()
+                    .onTapGesture {
+                        showWeatherDetails = true
+                    }
+                    .sheet(isPresented: $showWeatherDetails){
+                        WeatherDetailsView()
+                    }
                 
                 List{
                     

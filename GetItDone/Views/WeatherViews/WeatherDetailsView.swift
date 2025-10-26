@@ -16,7 +16,7 @@ struct WeatherDetailsView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
         let viewController = WeatherDetailsViewController()
         // Perform initial setup on the view controller here, if needed
-        viewController.view.backgroundColor = .systemBlue
+        //viewController.view.backgroundColor = .systemBlue
         return viewController
     }
     
