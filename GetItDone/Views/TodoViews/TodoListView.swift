@@ -24,7 +24,9 @@ struct TodoListView: View {
         NavigationStack{
             VStack{
                 
-                WeatherView()
+                NavigationLink(destination: WeatherDetailsView()) {
+                    WeatherView()
+                }
                 
                 List{
                     
