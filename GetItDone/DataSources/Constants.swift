@@ -11,6 +11,6 @@ struct Constants{
     static let currentWeatherURL = "https://api.weatherapi.com/v1/current.json?key=\(apiKey)"
     //&q=London&aqi=no
     
-    static let astronomyDetailsURL = "http://api.weatherapi.com/v1/astronomy.json?key=\(apiKey)"
+    static let astronomyURL = "https://api.weatherapi.com/v1/astronomy.json?key=\(apiKey)"
     //&q=London&dt=2025-10-25
 }

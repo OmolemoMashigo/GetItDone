@@ -18,7 +18,8 @@ struct WeatherView: View {
                 .padding()
             
             Button("Fetch Weather") {
-                viewModel.fetchData(for: city)
+                viewModel.fetchCurrentData(for: city)
+                viewModel.fetchAstroData(for: city)
             }
             .buttonStyle(.borderedProminent)
             

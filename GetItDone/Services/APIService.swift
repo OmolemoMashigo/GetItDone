@@ -16,8 +16,9 @@ class APIService{
     }
     
     static let singleton = APIService()
-    public var weatherServiceArr: WeatherData?
+    
     public var currentWeatherArr: WeatherData?
+    public var astronomyData: AstronomyData?
     
     func getWeatherData(city: String, completion: @escaping (Result<WeatherData, Error>) -> Void){
         
@@ -29,6 +30,25 @@ class APIService{
             case .success(let weatherData):
                 completion(.success(weatherData))
                 self.currentWeatherArr = weatherData
+            case .failure(let error):
+                print(error)
+            }
+            
+        }
+        
+        
+    }
+    
+    func getAstronomyData(city: String, completion: @escaping (Result<AstronomyData, Error>) -> Void){
+        
+        let formattedURL = "\(Constants.astronomyURL)&q=\(city)dt=2025-10-25"
+        
+        let finaUrl = URL(string: formattedURL)
+        URLSession.shared.getRequest(url: finaUrl, model: AstronomyData.self){ result in
+            switch result{
+            case .success(let astronomyData):
+                completion(.success(astronomyData))
+                self.astronomyData = astronomyData
             case .failure(let error):
                 print(error)
             }

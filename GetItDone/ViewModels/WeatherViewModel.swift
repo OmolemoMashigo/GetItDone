@@ -24,7 +24,7 @@ class WeatherViewModel: ObservableObject {
 //        self.networkService = networkService
 //    }
     
-    func fetchData(for city: String){
+    func fetchCurrentData(for city: String){
         
         isLoading = true
         errorMessage = nil
@@ -44,16 +44,28 @@ class WeatherViewModel: ObservableObject {
                 }
             }
         }
-        
-        
-        
-//        APIService.singleton.getWeatherData(city: "London", completion: { [weak self] result in
-//            switch result {
-//                case .success(let weatherData):
-//                self?.weatherArr = weatherData
-//            case .failure(let error):
-//                print("Error: \(error)")
-//            }
-//        })
     }
+    
+    func fetchAstroData(for city: String){
+        
+        isLoading = true
+        errorMessage = nil
+        
+        networkService.getAstronomyData(city: city){ [weak self] result in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                self.isLoading = false
+                
+                switch result {
+                case .success(let astroData):
+                    self.sunrise = astroData.astronomy.astro.sunrise
+                    self.sunset = astroData.astronomy.astro.sunset
+                case .failure(let error):
+                    self.errorMessage = "Failed to load weather: \(error.localizedDescription)"
+                    print("Error fetching weather:", error)
+                }
+            }
+        }
+    }
+
 }
