@@ -22,6 +22,10 @@ class APIService{
     
     func getWeatherData(city: String, completion: @escaping (Result<WeatherData, Error>) -> Void){
         
+//        let lat = 25.74
+//        let long = 28.18
+//        let cityName = "\(lat),\(long)"
+        
         let formattedURL = "\(Constants.currentWeatherURL)&q=\(city)&aqi=no"
         
         let finaUrl = URL(string: formattedURL)

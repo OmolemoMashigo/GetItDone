@@ -23,14 +23,14 @@ struct Current: Codable {
     let windMph, windKph: Double
     let windDegree: Int
     let windDir: String
-    let pressureMB: Int
+    let pressureMB: Double
     let pressureIn, precipMm, precipIn: Double
     let humidity, cloud: Int
     let feelslikeC, feelslikeF, windchillC, windchillF: Double
     let heatindexC, heatindexF, dewpointC, dewpointF: Double
     let visKM, visMiles, uv: Double
     let gustMph, gustKph: Double
-    let shortRAD, diffRAD, dni, gti: Int
+    let shortRAD, diffRAD, dni, gti: Double
 
     enum CodingKeys: String, CodingKey {
         case lastUpdatedEpoch = "last_updated_epoch"
