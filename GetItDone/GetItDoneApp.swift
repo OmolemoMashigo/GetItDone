@@ -12,7 +12,8 @@ import SwiftData
 struct GetItDoneApp: App {
     var body: some Scene {
         WindowGroup {
-            TodoListView()
+            //TodoListView()
+            WeatherView()
         }
         .modelContainer(for: TodoItem.self)
     }
