@@ -38,10 +38,11 @@ class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         lat = String(currentLocation.coordinate.latitude)
         long = String(currentLocation.coordinate.longitude)
         
-        print("longitude: \(long ?? "")")
         print("latitude: \(lat ?? "")")
-        //fetchCurrentData()
-        //fetchAstroData()
+        print("longitude: \(long ?? "")")
+        
+        fetchCurrentData()
+        fetchAstroData()
     }
     
     func initLocation(){
@@ -74,12 +75,12 @@ class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
             }
         }
     
-    func fetchCurrentData(for city: String){
+    func fetchCurrentData(){
         
         isLoading = true
         errorMessage = nil
         
-        networkService.getWeatherData(city: city){ [weak self] result in
+        networkService.getWeatherData(lat ?? "", long ?? ""){ [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 self.isLoading = false
@@ -88,6 +89,7 @@ class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                 case .success(let weatherData):
                     self.temperature = weatherData.current.tempC
                     self.cityName = weatherData.location.name
+                    print("city: \(self.cityName)")
                 case .failure(let error):
                     self.errorMessage = "Failed to load weather: \(error.localizedDescription)"
                     print("Error fetching weather:", error)
@@ -96,12 +98,12 @@ class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         }
     }
     
-    func fetchAstroData(for city: String){
+    func fetchAstroData(){
         
         isLoading = true
         errorMessage = nil
         
-        networkService.getAstronomyData(city: city){ [weak self] result in
+        networkService.getAstronomyData(lat ?? "", long ?? ""){ [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 self.isLoading = false

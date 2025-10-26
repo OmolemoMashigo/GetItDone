@@ -20,16 +20,16 @@ class APIService{
     public var currentWeatherArr: WeatherData?
     public var astronomyData: AstronomyData?
     
-    func getWeatherData(city: String, completion: @escaping (Result<WeatherData, Error>) -> Void){
+    func getWeatherData(_ latitude: String,_ longitude: String, completion: @escaping (Result<WeatherData, Error>) -> Void){
         
-//        let lat = 25.74
-//        let long = 28.18
-//        let cityName = "\(lat),\(long)"
+
+        let city = "-\(latitude),\(longitude)"
         
         let formattedURL = "\(Constants.currentWeatherURL)&q=\(city)&aqi=no"
         
-        let finaUrl = URL(string: formattedURL)
-        URLSession.shared.getRequest(url: finaUrl, model: WeatherData.self){ result in
+        let finalUrl = URL(string: formattedURL)
+        print("url is here: \(finalUrl)")
+        URLSession.shared.getRequest(url: finalUrl, model: WeatherData.self){ result in
             switch result{
             case .success(let weatherData):
                 completion(.success(weatherData))
@@ -43,12 +43,15 @@ class APIService{
         
     }
     
-    func getAstronomyData(city: String, completion: @escaping (Result<AstronomyData, Error>) -> Void){
+    func getAstronomyData(_ latitude: String,_ longitude: String, completion: @escaping (Result<AstronomyData, Error>) -> Void){
+        
+        let city = "\(latitude),\(longitude)"
         
         let formattedURL = "\(Constants.astronomyURL)&q=\(city)dt=2025-10-25"
         
-        let finaUrl = URL(string: formattedURL)
-        URLSession.shared.getRequest(url: finaUrl, model: AstronomyData.self){ result in
+        let finalUrl = URL(string: formattedURL)
+        print("astro url is here: \(finalUrl)")
+        URLSession.shared.getRequest(url: finalUrl, model: AstronomyData.self){ result in
             switch result{
             case .success(let astronomyData):
                 completion(.success(astronomyData))
@@ -63,3 +66,5 @@ class APIService{
     }
     
 }
+
+

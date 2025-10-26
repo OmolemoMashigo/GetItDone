@@ -6,22 +6,13 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct WeatherView: View {
     @StateObject private var viewModel = WeatherViewModel()
-    @State private var city = ""
     
     var body: some View {
         VStack(spacing: 20) {
-            TextField("Enter city name", text: $city)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            
-            Button("Fetch Weather") {
-                viewModel.fetchCurrentData(for: city)
-                viewModel.fetchAstroData(for: city)
-            }
-            .buttonStyle(.borderedProminent)
             
             if viewModel.isLoading {
                 ProgressView("Loading...")
@@ -48,6 +39,7 @@ struct WeatherView: View {
             //get user location
             viewModel.initLocation()
         }
+
     }
         
 }
