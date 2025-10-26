@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import CoreLocation
 
-class WeatherViewModel: ObservableObject {
+class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     @Published var temperature: Double?
     @Published var sunrise: String?
@@ -20,9 +21,58 @@ class WeatherViewModel: ObservableObject {
     private let networkService =  APIService.singleton
     private var weatherArr: WeatherData?
     
-//    init(networkService: APIService){
-//        self.networkService = networkService
-//    }
+    //location properties
+    private var location: CLLocation?
+    private var long: String?
+    private var lat: String?
+    private var locationManager: CLLocationManager!
+    
+    
+    func locationManager(_ manager: CLLocationManager, didFailwithError error: Error){
+        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+        let currentLocation = locations[0] as CLLocation
+
+        lat = String(currentLocation.coordinate.latitude)
+        long = String(currentLocation.coordinate.longitude)
+        
+        print("longitude: \(long ?? "")")
+        print("latitude: \(lat ?? "")")
+        //fetchCurrentData()
+        //fetchAstroData()
+    }
+    
+    func initLocation(){
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        //request user permissions
+        //locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
+        
+//        if CLLocationManager.locationServicesEnabled() {
+//            locationManager.startUpdatingLocation()
+//        }
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+            let status = manager.authorizationStatus
+            switch status {
+            case .authorizedAlways, .authorizedWhenInUse:
+                if CLLocationManager.locationServicesEnabled() {
+                    locationManager.startUpdatingLocation()
+                }
+            case .denied, .restricted:
+                print("Location access denied or restricted.")
+            case .notDetermined:
+                print("Waiting for user authorization…")
+            @unknown default:
+                break
+            }
+        }
     
     func fetchCurrentData(for city: String){
         

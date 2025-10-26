@@ -44,7 +44,12 @@ struct WeatherView: View {
             Spacer()
         }
         .padding()
+        .onAppear {
+            //get user location
+            viewModel.initLocation()
+        }
     }
+        
 }
 
 
