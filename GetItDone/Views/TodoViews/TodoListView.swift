@@ -25,16 +25,13 @@ struct TodoListView: View {
         NavigationStack{
             VStack{
                 
-//                NavigationLink(destination: WeatherDetailsView()) {
-//                    WeatherView()
-//                }
-                
                 WeatherView()
                     .onTapGesture {
                         showWeatherDetails = true
                     }
                     .sheet(isPresented: $showWeatherDetails){
                         WeatherDetailsView()
+                            .ignoresSafeArea(.all, edges: .bottom)
                     }
                 
                 List{

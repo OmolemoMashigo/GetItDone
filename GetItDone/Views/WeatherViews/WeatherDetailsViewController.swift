@@ -12,7 +12,24 @@ class WeatherDetailsViewController: UIViewController {
     
     private let backgroundImage = UIImageView()
     
-    var condition = "Partly cloudy"
+    
+    @IBOutlet weak var cityNameLabel: UILabel!
+    
+    @IBOutlet weak var tempLabel: UILabel!
+    
+    @IBOutlet weak var conditionLabel: UILabel!
+    
+    @IBOutlet weak var backgroundImg: UIImageView!
+    
+    @IBOutlet weak var sunriseIcon: UIImageView!
+    
+    @IBOutlet weak var sunsetIcon: UIImageView!
+    
+    @IBOutlet weak var sunriseLabel: UILabel!
+    
+    @IBOutlet weak var sunsetLabel: UILabel!
+    
+    var condition = "Sunny"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,30 +38,17 @@ class WeatherDetailsViewController: UIViewController {
     }
     
     func setBackgrounds(){
-        backgroundImage.contentMode = .scaleAspectFill
-        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
-        backgroundImage.clipsToBounds = true 
-        view.addSubview(backgroundImage)
-        view.sendSubviewToBack(backgroundImage)
-        
-        NSLayoutConstraint.activate([
-            backgroundImage.topAnchor.constraint(equalTo: view.topAnchor),
-            backgroundImage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            backgroundImage.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            backgroundImage.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
-        
-        
+
         if condition == "Sunny" {
-            backgroundImage.image = Backgrounds().backgroundImgs[5]
-        } else if condition == "clear"{
-            backgroundImage.image = Backgrounds().backgroundImgs[0]
+            backgroundImg.image = Backgrounds().backgroundImgs[6]
+        } else if condition == "Clear"{
+            backgroundImg.image = Backgrounds().backgroundImgs[0]
         }else if condition == "Cloudy" || condition == "Overcast" {
-            backgroundImage.image = Backgrounds().backgroundImgs[1]
+            backgroundImg.image = Backgrounds().backgroundImgs[1]
         }else if condition == "Partly cloudy" {
-            backgroundImage.image = Backgrounds().backgroundImgs[2]
+            backgroundImg.image = Backgrounds().backgroundImgs[2]
         } else if condition == "Moderate rain" || condition == "Heavy rain" || condition == "Light rain" {
-            backgroundImage.image = Backgrounds().backgroundImgs[4]
+            backgroundImg.image = Backgrounds().backgroundImgs[4]
         }
     }
 }
