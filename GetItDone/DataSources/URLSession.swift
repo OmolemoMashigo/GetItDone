@@ -39,11 +39,6 @@ extension URLSession{
                 }
                 return
             }
-
-            //print raw JSON data
-            if let jsonString = String(data: guardedData, encoding: .utf8) {
-                    print("Raw API Response:\n\(jsonString)")
-                }
             
             do{
                 let resultData = try JSONDecoder().decode(model, from: guardedData)

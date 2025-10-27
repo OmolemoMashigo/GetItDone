@@ -94,7 +94,7 @@ struct TodoListView: View {
             let todo = todos[offset]
             modelContext.delete(todo)
         }
-        print("delete")
+        print("todo item deleted")
     }
     
     func deleteDoneItem(at offsets: IndexSet){
@@ -102,7 +102,7 @@ struct TodoListView: View {
             let done = doneItems[offset]
             modelContext.delete(done)
         }
-        print("delete")
+        print("done item deleted")
     }
 }
 

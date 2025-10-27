@@ -39,9 +39,6 @@ class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         lat = String(currentLocation.coordinate.latitude)
         long = String(currentLocation.coordinate.longitude)
         
-        print("latitude: \(lat ?? "")")
-        print("longitude: \(long ?? "")")
-        
         fetchCurrentData()
         fetchAstroData()
     }
@@ -87,7 +84,6 @@ class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                     self.temperature = weatherData.current.tempC
                     self.cityName = weatherData.location.name
                     self.condition = weatherData.current.condition.text
-                    print("city: \(self.cityName)")
                 case .failure(let error):
                     self.errorMessage = "Failed to load weather: \(error.localizedDescription)"
                     print("Error fetching weather:", error)
