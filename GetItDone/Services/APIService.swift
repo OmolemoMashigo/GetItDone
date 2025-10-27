@@ -46,8 +46,10 @@ class APIService{
     func getAstronomyData(_ latitude: String,_ longitude: String, completion: @escaping (Result<AstronomyData, Error>) -> Void){
         
         let city = "\(latitude),\(longitude)"
+        let date = formatDate()
         
-        let formattedURL = "\(Constants.astronomyURL)&q=\(city)dt=2025-10-25"
+        let formattedURL = "\(Constants.astronomyURL)&q=\(city)dt=\(date)"
+        
         
         let finalUrl = URL(string: formattedURL)
         print("astro url is here: \(finalUrl)")
@@ -63,6 +65,16 @@ class APIService{
         }
         
         
+    }
+    
+    func formatDate() -> String {
+        let today = Date()
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let dateString = dateFormatter.string(from: today)
+
+        return dateString
     }
     
 }
