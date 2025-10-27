@@ -32,10 +32,10 @@ struct AddItemView: View {
                     }
                     
                     Button("Add"){
-                        let todoItem = TodoItem(title: taskTitle, details: taskDescription, isCompleted: false)
-                        modelContext.insert(todoItem)
                         
                         if isValidInput(){
+                            let todoItem = TodoItem(title: taskTitle, details: taskDescription, isCompleted: false)
+                            modelContext.insert(todoItem)
                             dismiss()
                         }
                     }
