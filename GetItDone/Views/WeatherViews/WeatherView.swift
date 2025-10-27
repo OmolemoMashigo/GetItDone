@@ -17,7 +17,7 @@ struct WeatherView: View {
     
     var body: some View {
         ZStack(alignment: .leading) {
-            // Background gradient with soft material effect
+            
             LinearGradient(
                 gradient: Gradient(colors: [Color.blue.opacity(0.4), Color.white.opacity(0.3)]),
                 startPoint: .topLeading,
@@ -94,7 +94,3 @@ struct WeatherView: View {
     }
 }
 
-
-//#Preview {
-//    WeatherView()
-//}

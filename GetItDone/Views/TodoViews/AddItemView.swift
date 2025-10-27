@@ -24,7 +24,6 @@ struct AddItemView: View {
                 Form{
                     Section{
                         TextField("add task", text: $taskTitle)
-                        DatePicker("due date", selection: .constant(Date()))
                     }
                     
                     Section("description"){

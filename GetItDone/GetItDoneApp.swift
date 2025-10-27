@@ -12,7 +12,7 @@ import SwiftData
 struct GetItDoneApp: App {
     var body: some Scene {
         WindowGroup {
-            TodoListView()
+            SplashScreenView()
         }
         .modelContainer(for: TodoItem.self)
     }
