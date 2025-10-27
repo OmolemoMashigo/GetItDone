@@ -26,13 +26,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhS-nC-uBT">
-                                <rect key="frame" x="154" y="307" width="88" height="36"/>
+                                <rect key="frame" x="128" y="307" width="147" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HT-fn-NWG">
-                                <rect key="frame" x="148" y="361" width="100" height="30"/>
+                                <rect key="frame" x="73" y="361" width="295" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -82,7 +82,7 @@
                             <constraint firstItem="k8C-uI-RlA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="359" id="Cj7-A4-KVh"/>
                             <constraint firstItem="b1p-MN-Sup" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="172" id="HNR-ok-Rwb"/>
                             <constraint firstAttribute="bottom" secondItem="2ig-zu-cz1" secondAttribute="bottom" id="HsP-QX-kV6"/>
-                            <constraint firstItem="7HT-fn-NWG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="148" id="Kls-2V-NO8"/>
+                            <constraint firstItem="7HT-fn-NWG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="73" id="Kls-2V-NO8"/>
                             <constraint firstItem="ZJV-63-6XB" firstAttribute="top" secondItem="k8C-uI-RlA" secondAttribute="bottom" constant="20" id="LAb-6m-s3h"/>
                             <constraint firstItem="WhS-nC-uBT" firstAttribute="top" secondItem="b1p-MN-Sup" secondAttribute="bottom" constant="30" id="LZE-IQ-P0r"/>
                             <constraint firstItem="SYw-o6-5OW" firstAttribute="top" secondItem="b1p-MN-Sup" secondAttribute="bottom" constant="147" id="M0E-Bp-JTf"/>
@@ -102,10 +102,10 @@
                             <constraint firstItem="7HT-fn-NWG" firstAttribute="top" secondItem="WhS-nC-uBT" secondAttribute="bottom" constant="18" id="gVO-JW-Etj"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="SYw-o6-5OW" secondAttribute="bottom" constant="373" id="geX-xZ-NK9"/>
                             <constraint firstItem="WhS-nC-uBT" firstAttribute="top" secondItem="b1p-MN-Sup" secondAttribute="bottom" constant="30" id="hvV-3q-2aE"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WhS-nC-uBT" secondAttribute="trailing" constant="151" id="jC4-k2-IgL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WhS-nC-uBT" secondAttribute="trailing" constant="118" id="jC4-k2-IgL"/>
                             <constraint firstItem="bxs-8U-pNI" firstAttribute="leading" secondItem="SYw-o6-5OW" secondAttribute="trailing" constant="170" id="kGg-d5-egC"/>
-                            <constraint firstItem="WhS-nC-uBT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="154" id="kee-py-552"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7HT-fn-NWG" secondAttribute="trailing" constant="145" id="lSS-I2-Z9a"/>
+                            <constraint firstItem="WhS-nC-uBT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="128" id="kee-py-552"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7HT-fn-NWG" secondAttribute="trailing" constant="25" id="lSS-I2-Z9a"/>
                             <constraint firstItem="ZJm-PH-7Nk" firstAttribute="leading" secondItem="bxs-8U-pNI" secondAttribute="trailing" constant="8" id="mVa-q6-ovr"/>
                             <constraint firstItem="7HT-fn-NWG" firstAttribute="top" secondItem="WhS-nC-uBT" secondAttribute="bottom" constant="18" id="mb1-Bg-yz9"/>
                             <constraint firstItem="b1p-MN-Sup" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="65" id="oa5-vM-h2C"/>
