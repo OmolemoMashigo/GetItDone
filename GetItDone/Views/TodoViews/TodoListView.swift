@@ -59,8 +59,6 @@ struct TodoListView: View {
                     }
                     
                 }
-                //.animation(.linear.delay(Double(num)/20), value: amountDragged)
-                //.animation(.bouncy, value: amountDragged)
                 .animation(.easeInOut, value: todos)
                 .animation(.easeInOut, value: doneItems)
                 .navigationTitle("Get It Done")
@@ -104,35 +102,6 @@ struct TodoListView: View {
         }
         print("delete")
     }
-    
-    
-    func printItems(){
-        let fetchDescriptor = FetchDescriptor<TodoItem>()
-        do{
-            let todos = try modelContext.fetch(fetchDescriptor)
-            
-            for todo in todos{
-                print(todo.title)
-                print(todo.details)
-            }
-        } catch{
-            print("Failed to fetch TodoItems: \(error)")
-        }
-        
-    }
-    
-    func deleteAllTodos() {
-        do {
-            let fetchDescriptor = FetchDescriptor<TodoItem>()
-            let allTodos = try modelContext.fetch(fetchDescriptor)
-            for todo in allTodos {
-                modelContext.delete(todo)
-            }
-        } catch {
-            print("Failed to fetch todos: \(error)")
-        }
-    }
-
 }
 
 #Preview {

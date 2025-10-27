@@ -29,12 +29,19 @@ class WeatherDetailsViewController: UIViewController {
     
     @IBOutlet weak var sunsetLabel: UILabel!
     
-    var condition = "Sunny"
+    var condition = "Clear"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackgrounds()
+        setUpViews()
 
+    }
+    
+    func setUpViews(){
+        sunriseIcon.image = UIImage(named: "sunrise")
+        sunsetIcon.image = UIImage(named: "sunset")
     }
     
     func setBackgrounds(){

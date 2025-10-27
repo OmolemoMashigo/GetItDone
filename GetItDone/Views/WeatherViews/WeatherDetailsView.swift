@@ -9,21 +9,21 @@ import SwiftUI
 import UIKit
 
 struct WeatherDetailsView: UIViewControllerRepresentable {
-    
-    typealias UIViewControllerType = UIViewController
-    
-    
-    func makeUIViewController(context: Context) -> UIViewController {
+        
+    func makeUIViewController(context: Context) -> WeatherDetailsViewController {
         let storyboard = UIStoryboard(name: "WeatherDetailsViewController", bundle: nil)
         let viewController = storyboard.instantiateViewController(
             withIdentifier: "WeatherDetailsViewController"
         ) as! WeatherDetailsViewController
         
+        //viewController.cityNameLabel.text = viewModel.cityName
+        //viewController.conditionLabel.text = condition
+        
         return viewController
     }
     
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        
+    func updateUIViewController(_ uiViewController: WeatherDetailsViewController, context: Context) {
+        //uiViewController.cityName = city
     }
 }
 

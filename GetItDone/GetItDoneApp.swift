@@ -13,7 +13,6 @@ struct GetItDoneApp: App {
     var body: some Scene {
         WindowGroup {
             TodoListView()
-            //WeatherView()
         }
         .modelContainer(for: TodoItem.self)
     }

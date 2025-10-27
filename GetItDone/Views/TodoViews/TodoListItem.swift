@@ -31,11 +31,6 @@ struct TodoListItem: View {
 }
 
 #Preview {
-//    let item1 = TodoItem(title: "feed the dog", details: "beef tonight", isCompleted: true)
-//    let item2 = TodoItem(title: "feed the cat", details: "fish tonight", isCompleted: false)
-//    
-//    Group{
-//        TodoListItem(todoItem: item1)
-//        TodoListItem(todoItem: item2)
-//    }
+    let item = TodoItem(title: "feed the dog", details: "beef tonight", isCompleted: true)
+    TodoListItem(todoItem: item)
 }

@@ -47,26 +47,37 @@ struct WeatherView: View {
                         // Temperature
                         if let temp = viewModel.temperature {
                             Text("\(temp, specifier: "%.1f")°C")
-                                //.font(.title2)
                                 .font(.system(size: 30, weight: .medium))
                                 .foregroundColor(.white)
                         }
                         
                         
                         // sunrise and sunset
-                        HStack(spacing: 2) {
+                        VStack(spacing: 5) {
                             if let sunrise = viewModel.sunrise {
-                                Text("Sunrise: \(sunrise)")
+                                HStack(spacing: 5){
+                                    Image("sunrise")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(maxWidth: 25, maxHeight: 25)
+                                    Text("Sunrise: \(sunrise)")
+                                }
                             }
                             if let sunset = viewModel.sunset {
-                                Text("Sunset: \(sunset)")
+                                HStack(spacing: 5){
+                                    Image("sunset")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(maxWidth: 25, maxHeight: 25)
+                                    Text("Sunset: \(sunset)")
+                                }
                             }
                         }
                         .font(.caption)
                         .foregroundColor(.white.opacity(0.8))
                     }
                 }
-                .padding()
+                .padding(4)
                 
             }
             .padding()
