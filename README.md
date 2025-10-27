@@ -16,6 +16,10 @@ The app features:
 
 + 🎨 Splash Screen: Beautiful gradient background that transitions seamlessly into the main app.
 
+## 🐞🪲🐛Bugs
++ Location returned when running the app through the simulator differs from the location returned from a physical device
++ Physical device returns an accurate location, with more accurate data
+
 ### 🚨 Build and run on a simulator or device from iOS 17+
 
 
