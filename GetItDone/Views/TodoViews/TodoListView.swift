@@ -21,16 +21,18 @@ struct TodoListView: View {
     @State private var showingAddScreen = false
     @State private var showWeatherDetails = false
     
+    @StateObject private var weatherViewModel = WeatherViewModel()
+    
     var body: some View {
         NavigationStack{
             VStack{
                 
-                WeatherView()
+                WeatherView(viewModel: weatherViewModel)
                     .onTapGesture {
                         showWeatherDetails = true
                     }
                     .sheet(isPresented: $showWeatherDetails){
-                        WeatherDetailsView()
+                        WeatherDetailsView(viewModel: weatherViewModel)
                             .ignoresSafeArea(.all, edges: .bottom)
                     }
                 

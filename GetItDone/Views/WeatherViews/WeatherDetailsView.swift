@@ -9,6 +9,8 @@ import SwiftUI
 import UIKit
 
 struct WeatherDetailsView: UIViewControllerRepresentable {
+    
+    @ObservedObject var viewModel: WeatherViewModel
         
     func makeUIViewController(context: Context) -> WeatherDetailsViewController {
         let storyboard = UIStoryboard(name: "WeatherDetailsViewController", bundle: nil)
@@ -16,14 +18,13 @@ struct WeatherDetailsView: UIViewControllerRepresentable {
             withIdentifier: "WeatherDetailsViewController"
         ) as! WeatherDetailsViewController
         
-        //viewController.cityNameLabel.text = viewModel.cityName
-        //viewController.conditionLabel.text = condition
-        
+        viewController.viewModel = viewModel
         return viewController
     }
     
     func updateUIViewController(_ uiViewController: WeatherDetailsViewController, context: Context) {
-        //uiViewController.cityName = city
+        uiViewController.viewModel = viewModel
+        uiViewController.updateUI()
     }
 }
 

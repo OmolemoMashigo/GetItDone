@@ -20,22 +20,24 @@ struct AddItemView: View {
     var body: some View {
     
         NavigationStack {
-            Form{
-                Section{
-                    TextField("add task", text: $taskTitle)
-                    DatePicker("due date", selection: .constant(Date()))
-                }
-                
-                Section("description"){
-                    TextEditor(text: $taskDescription)
-                }
-                
-                Button("Add"){
-                    let todoItem = TodoItem(title: taskTitle, details: taskDescription, isCompleted: false)
-                    modelContext.insert(todoItem)
+            VStack{
+                Form{
+                    Section{
+                        TextField("add task", text: $taskTitle)
+                        DatePicker("due date", selection: .constant(Date()))
+                    }
                     
-                    if isValidInput(){
-                        dismiss()
+                    Section("description"){
+                        TextEditor(text: $taskDescription)
+                    }
+                    
+                    Button("Add"){
+                        let todoItem = TodoItem(title: taskTitle, details: taskDescription, isCompleted: false)
+                        modelContext.insert(todoItem)
+                        
+                        if isValidInput(){
+                            dismiss()
+                        }
                     }
                 }
             }

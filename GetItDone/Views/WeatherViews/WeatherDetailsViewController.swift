@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import Combine
 
 class WeatherDetailsViewController: UIViewController {
     
@@ -31,6 +32,8 @@ class WeatherDetailsViewController: UIViewController {
     
     var condition = "Clear"
     
+    var viewModel: WeatherViewModel?
+    private var cancellables = Set<AnyCancellable>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,4 +61,46 @@ class WeatherDetailsViewController: UIViewController {
             backgroundImg.image = Backgrounds().backgroundImgs[4]
         }
     }
+    
+    func observeViewModel() {
+            //safely unwrap vm first
+            guard let vm = viewModel else { return }
+
+            // references to the local publisher
+            let cityPub = vm.$cityName
+            let tempPub = vm.$temperature
+            let condPub = vm.$condition
+            let sunrisePub = vm.$sunrise
+            let sunsetPub = vm.$sunset
+
+            Publishers.CombineLatest3(cityPub, tempPub, condPub)
+                .combineLatest(sunrisePub, sunsetPub)
+                .receive(on: RunLoop.main) // UI updates on main thread
+                .sink { [weak self] combined, sunrise, sunset in
+                    
+                    let (city, temp, condition) = combined
+
+            
+                    self?.cityNameLabel.text = city
+                    if let t = temp {
+                        self?.tempLabel.text = String(format: "%.1f°C", t)
+                    } else {
+                        self?.tempLabel.text = "--°C"
+                    }
+                    self?.conditionLabel.text = condition
+                    self?.sunriseLabel.text = sunrise ?? "--"
+                    self?.sunsetLabel.text = sunset ?? "--"
+
+                }
+                .store(in: &cancellables)
+        }
+    
+    func updateUI() {
+            guard let vm = viewModel else { return }
+            cityNameLabel.text = vm.cityName
+            if let t = vm.temperature { tempLabel.text = String(format: "%.1f°C", t) }
+            conditionLabel.text = vm.condition
+            sunriseLabel.text = vm.sunrise
+            sunsetLabel.text = vm.sunset
+        }
 }

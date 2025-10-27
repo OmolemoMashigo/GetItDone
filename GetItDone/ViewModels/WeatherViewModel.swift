@@ -52,12 +52,8 @@ class WeatherViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
         //request user permissions
-        //locationManager.requestWhenInUseAuthorization()
         locationManager.requestAlwaysAuthorization()
         
-//        if CLLocationManager.locationServicesEnabled() {
-//            locationManager.startUpdatingLocation()
-//        }
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {

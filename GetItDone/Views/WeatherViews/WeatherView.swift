@@ -9,7 +9,9 @@ import SwiftUI
 
 struct WeatherView: View {
     
-    @StateObject private var viewModel = WeatherViewModel()
+    //shared view model instance
+    @ObservedObject var viewModel: WeatherViewModel
+
     @State private var cityName: String = "Loading..."
     @State private var condition = ""
     
@@ -93,6 +95,6 @@ struct WeatherView: View {
 }
 
 
-#Preview {
-    WeatherView()
-}
+//#Preview {
+//    WeatherView()
+//}
