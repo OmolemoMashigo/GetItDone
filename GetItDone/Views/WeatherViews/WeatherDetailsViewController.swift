@@ -30,16 +30,19 @@ class WeatherDetailsViewController: UIViewController {
     
     @IBOutlet weak var sunsetLabel: UILabel!
     
-    var condition = "Clear"
     
     var viewModel: WeatherViewModel?
     private var cancellables = Set<AnyCancellable>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackgrounds()
         setUpViews()
-
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setBackgrounds()
     }
     
     func setUpViews(){
@@ -48,18 +51,20 @@ class WeatherDetailsViewController: UIViewController {
     }
     
     func setBackgrounds(){
-
-        if condition == "Sunny" {
+        guard let vm = viewModel else { return }
+        
+        if vm.condition == "Sunny" {
             backgroundImg.image = Backgrounds().backgroundImgs[6]
-        } else if condition == "Clear"{
+        } else if vm.condition == "Clear"{
             backgroundImg.image = Backgrounds().backgroundImgs[0]
-        }else if condition == "Cloudy" || condition == "Overcast" {
+        }else if vm.condition == "Cloudy" || vm.condition == "Overcast" {
             backgroundImg.image = Backgrounds().backgroundImgs[1]
-        }else if condition == "Partly cloudy" {
+        }else if vm.condition == "Partly cloudy" {
             backgroundImg.image = Backgrounds().backgroundImgs[2]
-        } else if condition == "Moderate rain" || condition == "Heavy rain" || condition == "Light rain" {
+        } else if vm.condition == "Moderate rain" || vm.condition == "Heavy rain" || vm.condition == "Light rain" {
             backgroundImg.image = Backgrounds().backgroundImgs[4]
         }
+        print("the condition is: \(vm.condition)")
     }
     
     func observeViewModel() {
@@ -96,11 +101,16 @@ class WeatherDetailsViewController: UIViewController {
         }
     
     func updateUI() {
-            guard let vm = viewModel else { return }
-            cityNameLabel.text = vm.cityName
-            if let t = vm.temperature { tempLabel.text = String(format: "%.1f°C", t) }
-            conditionLabel.text = vm.condition
-            sunriseLabel.text = vm.sunrise
-            sunsetLabel.text = vm.sunset
-        }
+        guard let vm = viewModel else { return }
+        cityNameLabel.text = vm.cityName
+        if let t = vm.temperature { tempLabel.text = String(format: "%.1f°C", t) }
+        conditionLabel.text = vm.condition
+        sunriseLabel.text = vm.sunrise
+        sunsetLabel.text = vm.sunset
+        
+//        print("vc city name: \(cityNameLabel.text)")
+//        print("vc condition: \(conditionLabel.text)")
+//        print("vc sunrise: \(sunriseLabel.text)")
+//        print("vc sunset: \(sunsetLabel.text)")
+    }
 }
