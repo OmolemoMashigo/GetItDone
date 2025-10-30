@@ -47,10 +47,13 @@ class APIService{
         let city = "\(latitude),\(longitude)"
         let date = formatDate()
         
-        let formattedURL = "\(Constants.astronomyURL)&q=\(city)dt=\(date)"
+        let formattedURL = "\(Constants.astronomyURL)&q=\(city)&dt=\(date)"
         
         
         let finalUrl = URL(string: formattedURL)
+        
+        print("final astro data url:")
+        print(finalUrl!)
        
         URLSession.shared.getRequest(url: finalUrl, model: AstronomyData.self){ result in
             switch result{
