@@ -1,4 +1,4 @@
-# 🌤️✅📝 GetItDone 
+# 📝✅🌤️GetItDone 
 A modern iOS app that combines task management and weather tracking in one sleek, intuitive interface. Built with SwiftUI, UIKit, and the MVVM architecture pattern for clean, testable, and scalable code.
 
 ## 👨🏾‍💻 Overview
