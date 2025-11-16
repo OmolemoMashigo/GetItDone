@@ -28,13 +28,18 @@ class APIService{
         let formattedURL = "\(Constants.currentWeatherURL)&q=\(city)&aqi=no"
         
         let finalUrl = URL(string: formattedURL)
+        
+        print("final current data url:")
+        print(finalUrl!)
+        
         URLSession.shared.getRequest(url: finalUrl, model: WeatherData.self){ result in
             switch result{
             case .success(let weatherData):
                 completion(.success(weatherData))
                 self.currentWeatherArr = weatherData
             case .failure(let error):
-                print(error)
+                print("Weather API Error: \(error)")
+                completion(.failure(error))
             }
             
         }
@@ -61,7 +66,8 @@ class APIService{
                 completion(.success(astronomyData))
                 self.astronomyData = astronomyData
             case .failure(let error):
-                print(error)
+                print("Astronomy API Error: \(error)")
+                completion(.failure(error))
             }
             
         }

@@ -30,7 +30,7 @@ struct Current: Codable {
     let heatindexC, heatindexF, dewpointC, dewpointF: Double
     let visKM, visMiles, uv: Double
     let gustMph, gustKph: Double
-    let shortRAD, diffRAD, dni, gti: Double
+    let shortRAD, diffRAD, dni, gti: Double?
 
     enum CodingKeys: String, CodingKey {
         case lastUpdatedEpoch = "last_updated_epoch"

@@ -1,0 +1,169 @@
+{
+  "" : {
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDone-primary.dia",
+    "emit-module-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDone-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDone-primary-emit-module.dia",
+    "pch" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDone-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDone-primary.swiftdeps"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/ContentView.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/ContentView.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/ContentView~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/DataSources/Constants.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/Constants.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/Constants.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/Constants.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/Constants.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/Constants.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/Constants.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/Constants.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/Constants~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/DataSources/URLSession.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/URLSession.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/URLSession.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/URLSession.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/URLSession.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/URLSession.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/URLSession.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/URLSession.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/URLSession~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/GetItDoneApp.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDoneApp.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDoneApp.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDoneApp.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDoneApp.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDoneApp.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDoneApp.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDoneApp.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GetItDoneApp~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Models/TodoModels/TodoItem.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoItem.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoItem.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoItem.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoItem.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoItem.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoItem.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoItem.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoItem~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Models/WeatherModels/AstronomyData.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AstronomyData.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AstronomyData.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AstronomyData.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AstronomyData.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AstronomyData.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AstronomyData.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AstronomyData.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AstronomyData~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Models/WeatherModels/WeatherData.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherData.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherData.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherData.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherData.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherData.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherData.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherData.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherData~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Services/APIService.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/APIService.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/APIService.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/APIService.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/APIService.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/APIService.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/APIService.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/APIService.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/APIService~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/ViewModels/WeatherViewModel.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherViewModel.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherViewModel.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherViewModel.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherViewModel.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherViewModel.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherViewModel.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherViewModel.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherViewModel~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/TodoViews/AddItemView.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AddItemView.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AddItemView.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AddItemView.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AddItemView.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AddItemView.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AddItemView.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AddItemView.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/AddItemView~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/TodoViews/SplashScreenView.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/SplashScreenView.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/SplashScreenView.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/SplashScreenView.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/SplashScreenView.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/SplashScreenView.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/SplashScreenView.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/SplashScreenView.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/SplashScreenView~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/TodoViews/TodoListItem.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListItem.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListItem.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListItem.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListItem.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListItem.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListItem.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListItem.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListItem~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/TodoViews/TodoListView.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListView.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListView.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListView.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListView.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListView.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListView.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListView.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/TodoListView~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/WeatherViews/WeatherDetailsView.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherDetailsView.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherDetailsView.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherDetailsView.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherDetailsView.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherDetailsView.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherDetailsView.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherDetailsView.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherDetailsView~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/WeatherViews/WeatherView.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherView.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherView.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherView.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherView.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherView.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherView.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherView.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/WeatherView~partial.swiftmodule"
+  },
+  "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

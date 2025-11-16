@@ -1,0 +1,16 @@
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/DataSources/Constants.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/DataSources/URLSession.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Models/TodoModels/TodoItem.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Models/WeatherModels/AstronomyData.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Models/WeatherModels/WeatherData.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Services/APIService.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/ViewModels/WeatherViewModel.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/TodoViews/AddItemView.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/TodoViews/SplashScreenView.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/TodoViews/TodoListItem.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/TodoViews/TodoListView.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/WeatherViews/WeatherDetailsView.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/Views/WeatherViews/WeatherView.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/ContentView.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/GetItDone/GetItDoneApp.swift
+/Users/omolemomashigo/Documents/DVT-docs/upskilling-prep/GetItDone/build/GetItDone.build/Debug-iphonesimulator/GetItDone.build/DerivedSources/GeneratedAssetSymbols.swift
