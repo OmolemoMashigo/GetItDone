@@ -33,19 +33,6 @@ struct WeatherDetailsView: View {
             .ignoresSafeArea()
             
             VStack(spacing: 0) {
-                // Header with close button
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        dismiss()
-                    }) {
-                        Image(systemName: "xmark.circle.fill")
-                            .font(.title2)
-                            .foregroundColor(.white.opacity(0.8))
-                            .padding()
-                    }
-                }
-                
                 // Main content
                 VStack(spacing: 24) {
                     // City name
@@ -77,7 +64,7 @@ struct WeatherDetailsView: View {
                         .frame(height: 60)
                     
                     // Sunrise and Sunset cards
-                    HStack(spacing: 20) {
+                    HStack(spacing: 12) {
                         // Sunrise card
                         WeatherInfoCard(
                             icon: "sunrise",
@@ -92,7 +79,7 @@ struct WeatherDetailsView: View {
                             value: viewModel.sunset ?? "--"
                         )
                     }
-                    .padding(.horizontal, 24)
+                    .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 }
                 .frame(maxHeight: .infinity)
                 .padding(.bottom, 40)
@@ -149,7 +136,8 @@ struct WeatherInfoCard: View {
                 .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 24)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 20)
         .background(
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.white.opacity(0.2))
